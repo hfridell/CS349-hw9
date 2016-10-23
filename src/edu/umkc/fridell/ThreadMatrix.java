@@ -41,7 +41,7 @@ public class ThreadMatrix {
       });
     }
 
-    for (int i = 0; i < matrix.length; ++i) {
+    for (int i = 0; i < rows; ++i) {
       final Future<Long> future = completionService.take();
       try {
         final Long rowSum = future.get();
