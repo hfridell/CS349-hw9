@@ -53,5 +53,7 @@ public class ThreadMatrix {
     ///////////////////////////////////
     System.out.println("Computation took " + ((System.nanoTime() - startTime) / 1000000) + " milliseconds");
     System.out.println("Result: " + total);
+
+    pool.shutdown();
   }
 }
