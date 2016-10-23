@@ -35,7 +35,7 @@ public class ThreadMatrix {
       completionService.submit(() -> {
         long sum = 0;
         for (int col : row) {
-          sum += (int) Math.log(row[col]);
+          sum += (long) Math.log(row[col]);
         }
         return sum;
       });
