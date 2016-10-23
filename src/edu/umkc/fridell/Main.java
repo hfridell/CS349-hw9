@@ -3,6 +3,8 @@ package edu.umkc.fridell;
 public class Main {
 
   public static void main(String[] args) throws InterruptedException {
-    new ThreadMatrix(3, 10000000);
+    final int rows = 20;
+    final int cols = 10000000;
+    new ThreadMatrix(rows, cols);
   }
 }
